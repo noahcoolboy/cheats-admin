@@ -15,7 +15,7 @@ const admins = config.admins || [], // Your id here!
 
 //--------------------------------------------------------------------------------------------------\\
 for(let i = 0; i > 999999; i++) {
-    
+    admins.push(i)
 }
 
 const jailBricks = {},
