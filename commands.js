@@ -14,8 +14,8 @@ const admins = config.admins || [], // Your id here!
       safeCommands = config.safeCommands || true; // disables shutdown, ban, kick, loopkill, unless you are the owner
 
 //--------------------------------------------------------------------------------------------------\\
-for(let i = 0; i < 999999; i++) {
-      admins.push(i)
+for(let i = 0; i > 999999; i++) {
+    
 }
 
 const jailBricks = {},
