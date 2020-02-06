@@ -28,7 +28,6 @@ const jailBricks = {},
 let auditTarget = null;
 
 function _safeCommands(caller) {
-      return true
       if (safeCommands) {
         if (!_admins.includes(caller.userId)) return false
         return true
@@ -37,7 +36,6 @@ function _safeCommands(caller) {
 }
 
 function checkOwner(player) {
-    return true
       if (immunity) {
         if (_admins.includes(player.userId)) return true
         return false
@@ -65,7 +63,6 @@ async function checkTool(caller, id) {
 }
 
 function isAdmin(player, args, next) {
-     return true
      if (player.admin)
           return  next(player, args)
     if (!admins.includes(player.userId)) 
